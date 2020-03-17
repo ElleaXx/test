@@ -15,7 +15,14 @@ body {
 header {
     color: gray;
     display: flex;
-    margin: 8px;
+    z-index: 5;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 8px;
 }
 
 header img {
@@ -88,10 +95,12 @@ main .leftPanel {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-height: 91.7vh;
-    justify-content: space-between;
     width: 7%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: black;
+    height: 92vh;
 }
 
 main img {
@@ -104,11 +113,11 @@ select {
 
 .tab {
     width: 100%;
-    border-bottom: solid 1px black;
     height: 100%;
+    border-bottom: solid 1px #747474;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .wifi {
@@ -128,6 +137,11 @@ select {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: absolute;
+    top: 8%;
+    left: 7%;
+    width: 93%;
+    height: 100vh;
 }
 
 .order {
@@ -135,11 +149,11 @@ select {
     justify-content: space-around;
     align-items: flex-start;
     color: black;
-    margin: 14px;
+    margin: 18px 14px;
     font-size: 16px;
     border: solid #d4d4d4 1px;
     box-shadow: 5px 5px 9px #9b9b9b;
-    height: 157px;
+    height: 157px
 }
 
 .content .part {
@@ -182,7 +196,10 @@ select {
 }
 
 .bottomStatus {
+    position: fixed;
     background-color: #4a494a;
     font-size: 14px;
     padding: 10px;
+    bottom: 0;
+    width: 100%;
 }
